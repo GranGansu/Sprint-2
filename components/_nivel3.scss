@@ -1,9 +1,0 @@
-#tarjetas .card{
-    $margin: 20px;
-    @for $i from 2 through 3 {
-    &:nth-child(#{$i}) {
-            $multiplo: $i - 1;
-            margin-top: $margin * $multiplo;
-        }
-      }
-}

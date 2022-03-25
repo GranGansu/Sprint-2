@@ -1,0 +1,31 @@
+.btn {
+    border: 2px solid transparent;
+    &:hover {
+        background-color: white;
+        border: 2px solid;
+        color: darken($primary, 30%);
+    }
+    &-primary:hover {
+        color: $primary;
+    }
+    &-danger {
+        a {
+            color: white !important;
+        }
+        & a:hover,
+        &:hover {
+            color: $secondary !important;
+        }
+    }
+}
+a.nav-link:hover {
+    color: $secondary !important;
+}
+.nav-tabs .nav-link:hover {
+    border: 1px solid transparent;
+    color: $secondary;
+}
+.nav-tabs .nav-link.active:hover {
+    border-bottom: 4px solid;
+    color: $secondary;
+}

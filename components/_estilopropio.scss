@@ -1,0 +1,142 @@
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  border: 1px solid transparent;
+  border-bottom: 4px solid red !important;
+  font-weight: bold;
+}
+li.nav-item a {
+  color: gray;
+}
+.fit-content {
+  width: fit-content;
+}
+.container {
+  margin-top: 60px;
+  overflow: hidden;
+}
+
+* {
+  font-family: Rubik;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+}
+
+.azul {
+  background-color: lighten($primary, 5%);
+  border-radius: 0% 0% 0% 24%;
+  position: absolute;
+  bottom: 0px;
+  left: 17%;
+  height: 73%;
+  z-index: -1;
+  width: 200%;
+}
+.azul-izq {
+  border-radius: 0% 31% 34% 0%;
+  bottom: -19px;
+  left: -124%;
+  height: 84%;
+}
+
+p {
+  color: gray;
+}
+
+div > img {
+  width: auto;
+  z-index: 9999;
+  max-height: 300px;
+  margin: auto;
+  display: block;
+  max-width: 100%;
+}
+.accordion-button::after {
+  background-image: url(../img/icon-arrow.svg);
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../img/icon-arrow.svg);
+  filter: hue-rotate(134deg);
+}
+.card-img,
+.card-img-top {
+  width: auto;
+  max-height: 130px;
+  margin: 20px auto auto auto;
+}
+.tab-content > .active {
+  display: flex;
+}
+
+div .card {
+  width: 18rem;border:none;
+  margin-right: 20px;
+  height: 330px;
+  hr {
+    border-bottom: 6px dotted gray;
+    color: transparent;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  @media (max-width: 768px) {
+    margin-right: 0px;
+  }
+}
+ul.nav.nav-tabs.container {
+  width: 100%;
+}
+
+footer ul li,
+#navbarNav ul li {
+  margin-right: 25px;
+  &:last-child {
+    margin-right: 0;
+  }
+  @media (max-width: 768px) {
+    margin: 0px;
+  }
+}
+
+footer > div:last-child {
+  background-color: darken($primary, 40%);
+}
+.invalid-feedback {
+  position: absolute;
+  background: red;
+  color: white;
+  width: fit-content;
+  border-radius: 5px;
+  bottom: -27px;
+  padding: 10px 0px 5px 0px;
+  z-index: 0;
+  width: 100%;
+  font-size: small;
+}
+.email {
+  z-index: 1;
+  width: 100%;
+  position: inherit;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#feature-ul {
+  width: fit-content;
+  li a {
+      padding: 15px 35px;
+  }
+  @media (max-width: 768px) {
+      width: 100%;
+  }
+  li {
+      @media (max-width: 768px) {
+          margin-right: 0px;
+          border-bottom: 1px solid gainsboro;
+      }
+  }
+}
